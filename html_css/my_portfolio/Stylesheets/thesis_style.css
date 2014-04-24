@@ -1,0 +1,17 @@
+@import url(http://fonts.googleapis.com/css?family=Jim+Nightshade|Condiment|Clicker+Script|Open+Sans:400italic,400&subset=latin,latin-ext);
+p{
+	font-family: "Open Sans";
+}
+h1{
+	text-transform: uppercase;
+	font-family: "Jim Nightshade";
+	font-style: italic;
+
+}
+h2{
+	font-family: "Clicker Script";
+}
+.name{
+	font-family: "Condiment";
+}
+a:hover   {color:red;}

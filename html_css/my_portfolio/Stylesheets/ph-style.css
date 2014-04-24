@@ -1,0 +1,60 @@
+.headline{
+	background-color:#DEDEDC;
+	text-align:center;
+	padding: 10px;
+	}	
+.a{
+	color:white;
+	background-color:#3476AA;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding: 4px;
+}
+#b{
+	background-color:#3687BC;
+	}
+#c{
+	background-color:#3293C0;
+	}
+#d{
+	background-color:#449FCB;
+	}
+#e{
+	background-color:#5CAED6;
+	}
+#f{
+	background-color:#75BAD9;
+	}
+#g{
+	background-color:#8CC1E0;
+	}
+#h{
+	background-color:#20AC7F;
+	}
+#i{
+	background-color:#EBAAC2;
+	}
+#j{
+	background-color:#E59BB6;
+	}
+#k{
+	background-color:#E587A9;
+	}
+#l{
+	background-color:#E3729D;
+	}
+#m{
+	background-color:#E2668B;
+	}
+#n{
+	background-color:#DE5780;
+	}
+#o{
+	background-color:#DE3D73;
+	}
+	span{
+		font-size: 30px;
+	}
+body{
+	background:#BBBBB9;
+}
