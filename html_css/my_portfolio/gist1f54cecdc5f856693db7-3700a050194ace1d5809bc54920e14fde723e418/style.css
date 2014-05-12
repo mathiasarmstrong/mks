@@ -1,7 +1,27 @@
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
 body {
   background: #eee;
 }
+ul.navbar{
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
 
+ul.navbar li a{
+  background: #ddd;
+  padding: 8px 20px;
+  float: left;
+}
 .container {
   width: 800px;
   margin: 0 auto;
@@ -10,6 +30,7 @@ body {
 .toc {
   background: white;
   float: left;
+  clear: left;
   width: 25%;
   padding: 20px;
   box-sizing: border-box;
