@@ -1,0 +1,54 @@
+<html>
+<head>
+  <title>Guess the Number!</title>
+</head>
+<body>
+
+<script type="text/javascript">
+var landmine = parseInt(Math.random() * 100, 10) + 1;
+var secretNumber = parseInt(Math.random() * 100, 10) + 1;
+var playerNumber = prompt("Please guess my number between 1 and 100");
+var higher = true;
+var equal = false;
+var bomb = false;
+
+var higherVal = function(player,me,mine){// me represents random number I generated and mine is landmine	
+	if (player>me){
+		higher = true;
+		check();
+	}
+	else if (player<me){
+		higher = false;
+		check();
+	}
+	else if (player=me){
+		equal = true;
+		check();
+	};	
+};
+
+var check = function(){
+	if (bomb){
+		alert("You have lost!")
+	}
+	else if (higher && !equal){
+		playerNumber = prompt('Pick lower, but beware you are ' + Math.abs(playerNumber-landmine) + ' away from the landmine');
+		higherVal(playerNumber,secretNumber, landmine)
+	}
+	else if (!higher && !equal){
+		playerNumber = prompt('Pick higher, but beware you are ' + Math.abs(playerNumber-landmine) + ' away from the landmine');
+		higherVal(playerNumber,secretNumber, landmine)
+	}
+	else if (equal){
+		alert("You have guessed the correct number!")
+	};
+	
+};
+
+higherVal(playerNumber, secretNumber, landmine); 
+
+
+</script>
+
+</body>
+</html>

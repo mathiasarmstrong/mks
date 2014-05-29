@@ -1,0 +1,14 @@
+var welcome = function(name1,name2){
+if(name2!=undefined){
+	return ("Welcome, "+ name1 + " and " + name2 + "!")
+}
+else{
+return("Welcome, "+name1 + "!");	
+};
+
+};
+var result = welcome('Alice', 'Bob');
+console.log('Result should be "Welcome, Alice and Bob!"', result);
+
+var result = welcome('Alice');
+console.log('Result should be "Welcome, Alice!"', result);
